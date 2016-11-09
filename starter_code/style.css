@@ -1,38 +1,98 @@
 /*-------- Utility Styles --------*/
 * {
 	box-sizing: border-box; 
+	font-family: 'Proza Libre', sans-serif;
+	border-radius: 3px;
+
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
 }
+h1 {
+font-size: 28px;
+font-weight: bold;
+letter-spacing: .1em;
+text-align: center;
+}
+body{
+font-size: 14px;
+}
 
 /* 
-	Use Google Fonts to make all of the text Proza Libre.
+	√ Use Google Fonts to make all of the text Proza Libre.
 
-	Make the Title twice as large as the body text, bold, and spaced evenly.
+	√Make the Title √twice as large as the body text, bold, and spaced evenly.
 */
 
 /*-------- Main Styles --------*/
-
+.container{
+width: 100%;
+}
+.form{
+display: block;
+float: left;
+width:30%;
+margin: 5% 0 0 5%;
+}
+.results{
+display: block;
+float: left;
+margin: 5% 0 0 2%;
+}
 /* 
-	Make the main container the full width of the page.
+	√Make the main container the full width of the page.
 
-	Make the two inner container (the form and the results) align side by side, on the left side of the screen.
+	√Make the two inner container (the form and the results) align side by side, on the left side of the screen.
 
-	Every container, form, input, and button should have rounded corners.
+	√Every container, form, input, and button should have rounded corners.
 */
 
 /*-------- Form Styles --------*/
+form{
+	width:100%;
+	max-width: 500px;
+	background: #e3e6ec;
+	background-position: center;
 
+}
+div{
+	padding: 5px;
+}
+.row{
+padding-bottom: 15px;
+}
 
+.radioButtons{
+	display:inline;
+}
+label.formGroup{
+	width:100%;
+	padding:5px auto;
+	display: block;
+}
+input {
+	height: 48px;
+	padding: 14px;
+	border: 1px #ccc solid;
+	border-style: none;
+
+	}
+textarea{
+	height: 100px;
+}
+input [type=submit] {
+	float: right;
+	font-weight: bold;
+	background: rgb(39,208,127);
+	}
 /* 
 
-	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
+	√Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
 	
-	The background should be #E3E6EC, and it should align to the middle of its container.
+	√The background should be #E3E6EC, and it should align to the middle of its container.
 	
-	Every element should have nice, even padding or margin around it.
+	√Every element should have nice, even padding or margin around it.
 
-	.row elements should be spaced out so they're not touching.
+	√.row elements should be spaced out so they're not touching.
 
 	.formGroup elements should fill the width of their container, and be inline-block.
 
@@ -42,11 +102,11 @@
 
 	Radio buttons and checkbox labels should be directly to the right of their corresponding inputs, and the text should vertically align with the inputs. 
 
-	Text inputs, submit buttons, and select boxes should all be at least 48px tall. The should have 14px of padding around their text. 
+	√Text inputs, submit buttons, and select boxes should all be at least 48px tall. They should have 14px of padding around their text. 
 
-	Textareas should be at least 100px tall.
+	√Textareas should be at least 100px tall.
 
-	Text inputs, select boxes, and textareas should have a 1px border that's #CCC, and none of the default shadows.
+	√Text inputs, select boxes, and textareas should have a 1px border that's #CCC, and none of the default shadows.
 
 	The submit button should float to the right, be bolded, and only be as wide as the text makes it.
 
@@ -57,13 +117,18 @@
 
 
 /*-------- Results Styles --------*/
-
+.container.results{
+width:100%;
+max-width: 500px;
+background: #c8dbb3;
+padding:30px;
+}
 
 /* 
 
-	The results container should also fill the width of its container, but only up to 500px.
+	√The results container should also fill the width of its container, but only up to 500px.
 
-	The results container should have a background color of #C8DBB3, and comfortable padding around the text.
+	√The results container should have a background color of #C8DBB3, and comfortable padding around the text.
 
 */
 
