@@ -64,7 +64,7 @@ padding-bottom: 15px;
 .radioButtons{
 	display:inline;
 }
-label.formGroup{
+.formGroup label{
 	width:100%;
 	padding:5px auto;
 	display: block;
@@ -79,7 +79,7 @@ input {
 textarea{
 	height: 100px;
 }
-input [type=submit] {
+#submit{
 	float: right;
 	font-weight: bold;
 	background: rgb(39,208,127);
@@ -108,9 +108,9 @@ input [type=submit] {
 
 	√Text inputs, select boxes, and textareas should have a 1px border that's #CCC, and none of the default shadows.
 
-	The submit button should float to the right, be bolded, and only be as wide as the text makes it.
+	√The submit button should float to the right, be bolded, and only be as wide as the text makes it.
 
-	The submit button should be rga(39, 208, 127), but only 50% opacity. On hover, it should be 100% opacity.
+	√The submit button should be rga(39, 208, 127), but only 50% opacity. On hover, it should be 100% opacity.
 	
 	
 */
