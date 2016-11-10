@@ -122,17 +122,30 @@
 		    var $name = $('#name').val();
 		    var $verb = $('#verb-1').val();
 		    var $mission =$('#mission').val();
-		    var $sentiment1 =$('#radioButtons').val();
+		    var $sentiment1 =$('input[name=sentiment]:checked').val();
 		    var $noun1 =$('#noun-1').val();
-		  //  var $sentiment2 = $(checkboxes[];
+		    var $senti= [];
+
+		    var $senti1 = $('#check1:checked').val();
+		    var $senti2 = $('#check2:checked').val();
+   		    var $senti3 = $('#check3:checked').val();
+   		    if($senti1!==undefined){
+   		    $senti.push($senti1);
+   			}
+   			if($senti2!==undefined){
+   		    $senti.push($senti2);
+   			}
+   			if($senti3!==undefined){
+   		    $senti.push($senti3);
+   			}
 		    var $noun2 =$('#noun-2').val();
-		    		
+		    		console.log($senti);
 
 			var sent1=	"Once upon a time there was a Developer named "+$name+".";
-			var sent2=	$name +" came to General Asssembly to "+$verb+ "the great mountain of programming knowledge. ";
+			var sent2=	$name +" came to General Asssembly to "+$verb+ " the great mountain of programming knowledge. ";
 			var sent3=	$mission+","+ $name+ " shouted.";
-	    	var sent4=	"Though"+ $sentiment1+","+ $name+" was able to overcome all obstacles with the power of their"+ $noun1+".";
-	    	var sent5=	"In the end, their success can be contributed entirely to their " + /*sentiment2+[list each one checked, comma-separated]*/ $noun2+ ".";
+	    	var sent4=	"Though "+ $senti+","+ $name+" was able to overcome all obstacles with the power of their"+ $noun1+".";
+	    	var sent5=	"In the end, their success can be contributed entirely to their " + $senti+" "+ $noun2+ ".";
 	    	var all = sent1+sent2+sent3+sent4+sent5;
 	    	var $newResult = $('.results').append(all);
 	    	/*

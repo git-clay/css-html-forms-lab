@@ -52,6 +52,8 @@ form{
 	max-width: 500px;
 	background: #e3e6ec;
 	background-position: center;
+	border: 1px #ccc solid;
+
 
 }
 div{
@@ -62,28 +64,36 @@ padding-bottom: 15px;
 }
 
 .radioButtons{
-	display:inline;
+	display:block;
+	box-shadow: none;
 }
-.formGroup label{
+.formGroup{
 	width:100%;
 	padding:5px auto;
-	display: block;
+	display: inline-block;
 }
-input {
+input label{
+	display: block;
 	height: 48px;
-	padding: 14px;
-	border: 1px #ccc solid;
-	border-style: none;
-
+	padding: 8px;
+	
 	}
 textarea{
 	height: 100px;
 }
 #submit{
-	float: right;
+	display: block;
+	height: 33px;
 	font-weight: bold;
-	background: rgb(39,208,127);
+	
 	}
+#submit input{
+	float: right;
+	background: rgba(39,208,127.5);
+}
+#submit input:hover{
+	
+}
 /* 
 
 	√Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
@@ -110,7 +120,7 @@ textarea{
 
 	√The submit button should float to the right, be bolded, and only be as wide as the text makes it.
 
-	√The submit button should be rga(39, 208, 127), but only 50% opacity. On hover, it should be 100% opacity.
+	The submit button should be rga(39, 208, 127), but only 50% opacity. On hover, it should be 100% opacity.
 	
 	
 */
